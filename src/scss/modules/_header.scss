@@ -48,6 +48,7 @@ div.wrapper {
     outline: none;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
    
   }
 
@@ -63,7 +64,8 @@ div.wrapper {
   input {
     margin-right: 10px;
     margin-left: 20px;
-    width: 200px;
+    width: 185px;
+    font-size: 16px 
   }
   button {
     background-color: #6262c2;
@@ -71,10 +73,3 @@ div.wrapper {
   }
 }
 
-//responsive
-
-@media screen and(max-width:419px) {
-   input{
-     height: 40px;
-   }
-}

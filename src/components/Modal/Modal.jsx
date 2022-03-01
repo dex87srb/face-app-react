@@ -120,6 +120,9 @@ export class Modal extends React.Component {
               />
               Female
             </span>
+
+          </div>
+          <div className="upload  clearfix">
             <span>
               <input
                 onChange={(e) => (this.storeData(e.target.files[0], "file"))}
@@ -131,8 +134,8 @@ export class Modal extends React.Component {
 
               this.handleUpload(e);
 
-            }}>upload</button>
-          </div>{this.errorImgUp()}
+            }}>upload</button></div >
+          {this.errorImgUp()}
           {this.displayError()}
           < button onClick={() => this.props.close(null)}>CLOSE</button>
           <button className={`${this.state.tempUrl === false ? 'disabled' : null}`} onClick={
