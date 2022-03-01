@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import { App } from "./App";
-import firebase from "firebase";
 import { BrowserRouter } from "react-router-dom";
-import 'firebase/storage';
+import firebase from 'firebase/app';
+import 'firebase/database'; // If using Firebase database
+import 'firebase/storage';;
 
 firebase.initializeApp(process.env.REACT_APP_API);
 

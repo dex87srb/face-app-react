@@ -5,7 +5,6 @@ import { Provider } from 'react-redux'
 import { reducer } from "./store/reducers/reducer"
 import thunk from 'redux-thunk';
 import "./scss/general.scss";
-import firebase from "firebase";
 
 import { Header } from "./components/Header/Header";
 import { Users } from "./components/Users/Users";
