@@ -36,6 +36,7 @@ section.modal {
       font-size: 20px;
       font-weight: bold;
     }
+
     label {
       display: block;
       margin: 15px;
@@ -46,10 +47,9 @@ section.modal {
       float: right;
       width: 60%;
       margin: 0 30px;     
-       border: solid 1px #ccc;
-    outline: none;
-     &:focus{
-      
+      border: solid 1px #ccc;
+      outline: none;
+     &:focus{ 
             border: solid 1px #6262c2;
         }  
     }
@@ -129,7 +129,10 @@ input[type=file]::file-selector-button{
     display: flex;
     flex-wrap: wrap;
      div.container {
-      height: 333px;
+      height: 371px;
+      label input {
+        height: 40px;
+      }
      }
   }
 

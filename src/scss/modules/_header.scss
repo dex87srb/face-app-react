@@ -70,3 +70,11 @@ div.wrapper {
     color: #fff;
   }
 }
+
+//responsive
+
+@media screen and(max-width:419px) {
+   input{
+     height: 40px;
+   }
+}
