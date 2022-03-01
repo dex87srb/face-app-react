@@ -136,7 +136,7 @@ input[type=file]::file-selector-button{
 
 //responsive
 
-@media screen and(max-width:419px) {
+@media screen and(max-width:400px) {
    section.modal { 
     display: flex;
     flex-wrap: wrap;
@@ -146,4 +146,17 @@ input[type=file]::file-selector-button{
     }
   }
 }
+
+@media not all and (max-resolution:419px)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+
+     section.modal { 
+    display: flex;
+    flex-wrap: wrap;
+   
+    div.container{
+      height: 351px;
+    }
+  }
+}}
 
