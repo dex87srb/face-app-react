@@ -125,16 +125,17 @@ export class Modal extends React.Component {
           <div className="upload  clearfix">
             <span>
               <input
+                id="open-file"
                 onChange={(e) => (this.storeData(e.target.files[0], "file"))}
                 type="file"
                 name="file"
               />
             </span>
-            <button id="upload-button" onClick={(e) => {
+            <button id="myButton" onClick={(e) => {
 
               this.handleUpload(e);
 
-            }}>upload</button></div >
+            }}>Upload</button></div >
           {this.errorImgUp()}
           {this.displayError()}
           < button onClick={() => this.props.close(null)}>CLOSE</button>
