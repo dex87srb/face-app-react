@@ -1,14 +1,16 @@
 const GET_USERS = "getUsers"
 
 
-const setData = (user) => {
+const setData = (users) => {
+
     return {
         type: GET_USERS,
-        user
+        users
     }
 }
 
 const getData = (obj) => {
+
     return (dispatch) => {
         dispatch(setData(obj));
     }

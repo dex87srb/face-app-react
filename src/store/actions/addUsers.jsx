@@ -2,6 +2,7 @@ const ADD_USERS = "addUsers"
 
 
 const setData = (user) => {
+
     return {
         type: ADD_USERS,
         user
@@ -9,6 +10,7 @@ const setData = (user) => {
 }
 
 const appendData = (obj) => {
+
     return (dispatch) => {
         dispatch(setData(obj));
     }
